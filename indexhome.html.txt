@@ -1,0 +1,30 @@
+<html> 
+<head> <h1>Hello Welcome To Live Blogs 365 </h1>
+<title> Live Blog 
+</title>
+</head>
+<body>
+<br/>
+<h2> Personal Experience About Mountains Traveling
+</h2>
+Traveling through the mountains was one of the most breathtaking experiences of my life. The crisp air, the winding trails, and the towering peaks filled me with a sense of freedom and awe. I remember standing at the edge of a cliff, watching the sun rise over a sea of clouds--it felt like time had stopped. Every step along the rocky paths tested my endurance, but the peaceful solitude and stunning views made it all worth it. Camping under a blanket of stars, with the distant howls of nature, reminded me how small yet deeply connected I am to the world around me.
+<h2>
+<br/>
+Red Sea Review 
+</h2>
+<br/>
+The Red Sea is a truly fascinating and unique body of water, known for its rich history, vibrant marine life, and stunning natural beauty. Located between Africa and the Arabian Peninsula, it stretches over 2,000 kilometers and connects to the Mediterranean Sea via the Suez Canal. The Red Sea is renowned for its crystal-clear waters and colorful coral reefs, which are among the most diverse and untouched in the world. These reefs are home to thousands of marine species, including exotic fish, sea turtles, and even dolphins, making it a paradise for divers and snorkelers. What makes the Red Sea even more intriguing is its geological activity--it's part of the Great Rift Valley, and the seafloor is slowly spreading, which means new oceanic crust is constantly forming. Culturally and historically, the Red Sea has played a vital role in trade and travel for thousands of years, serving as a key route for ancient civilizations. Today, it remains a crucial shipping lane but also a major tourist destination, drawing people from all over the world who are eager to explore its warm waters and surreal underwater landscapes.
+
+<br/>
+<br/>
+
+<center>
+<button style="width: 150px; height: 50px;>
+<a href="https://youtube.com/shorts/FbJoxHtva88?si=6NGHDzJHqUbgUuPI">
+
+</a>
+Check Video </button> 
+</center>
+
+</body>
+</html>
