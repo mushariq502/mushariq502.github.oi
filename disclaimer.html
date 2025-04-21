@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  background: #0f172a;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 26px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0f172a;
+    margin-top: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+  }
+}
+</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disclaimer - Liveblogs365</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body> <nav class="navbar">
+  <div class="logo">Liveblogs365</div>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    <li><a href="policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
     <header>
         <h1>Disclaimer</h1>
     </header>
