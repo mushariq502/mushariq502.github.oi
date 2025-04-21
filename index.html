@@ -3,26 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <title>Live Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      background-color: #0f172a;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #1e293b;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #0f172a;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Dropdown Menu */
+    #menu {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      background: #0f172a;
+      border-radius: 5px;
+    }
+
+    #menu li {
+      padding: 10px;
+    }
+
+    #menu li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 5px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    #menu li a:hover {
+      background-color: #1e293b;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+<body>
+
   <!-- Navbar Start -->
-<nav style="background-color:#0f172a; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-  <div style="color: white; font-size: 20px; font-weight: bold;">Liveblogs365</div>
-  <button onclick="toggleMenu()" style="background:none; border:none; color:white; font-size: 24px;" id="menuBtn">&#9776;</button>
-</nav>
+  <nav>
+    <div class="logo">Liveblogs365</div>
+    <button onclick="toggleMenu()">&#9776;</button>
+  </nav>
 
-<ul id="menu" style="display:none; list-style:none; margin:0; padding:10px; background:#0f172a;">
-  <li><a href="index.html" style="color:white; text-decoration:none; display:block; padding:10px;">Home</a></li>
-  <li><a href="blogs.html" style="color:white; text-decoration:none; display:block; padding:10px;">Blogs</a></li>
-  <li><a href="about.html" style="color:white; text-decoration:none; display:block; padding:10px;">About</a></li>
-  <li><a href="disclaimer.html" style="color:white; text-decoration:none; display:block; padding:10px;">Disclaimer</a></li>
-  <li><a href="policy.html" style="color:white; text-decoration:none; display:block; padding:10px;">Privacy Policy</a></li>
-  <li><a href="terms.html" style="color:white; text-decoration:none; display:block; padding:10px;">Terms</a></li>
-</ul>
-<!-- Navbar End -->
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    <li><a href="policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+  <!-- Navbar End -->
 
-
-  <h1 style="text-align: center;">Hello, Welcome To Live Blogs 365</h1>
+  <h1>Hello, Welcome To Live Blogs 365</h1>
 
   <h2>Personal Experience About Mountains Traveling</h2>
   <p>
@@ -45,19 +143,20 @@
 
   <div style="text-align: center; margin-top: 40px;">
     <a href="blogs.html" target="_blank">
-      <button style="width: 150px; height: 50px;"> Click Here To Continue </button>
+      <button>Click Here To Continue</button>
     </a>
   </div>
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById("menu");
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
 </html>
