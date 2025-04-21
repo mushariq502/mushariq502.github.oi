@@ -5,6 +5,22 @@
   <title>Live Blog</title>
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+  <!-- Navbar Start -->
+<nav style="background-color:#0f172a; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+  <div style="color: white; font-size: 20px; font-weight: bold;">Liveblogs365</div>
+  <button onclick="toggleMenu()" style="background:none; border:none; color:white; font-size: 24px;" id="menuBtn">&#9776;</button>
+</nav>
+
+<ul id="menu" style="display:none; list-style:none; margin:0; padding:10px; background:#0f172a;">
+  <li><a href="index.html" style="color:white; text-decoration:none; display:block; padding:10px;">Home</a></li>
+  <li><a href="blogs.html" style="color:white; text-decoration:none; display:block; padding:10px;">Blogs</a></li>
+  <li><a href="about.html" style="color:white; text-decoration:none; display:block; padding:10px;">About</a></li>
+  <li><a href="disclaimer.html" style="color:white; text-decoration:none; display:block; padding:10px;">Disclaimer</a></li>
+  <li><a href="policy.html" style="color:white; text-decoration:none; display:block; padding:10px;">Privacy Policy</a></li>
+  <li><a href="terms.html" style="color:white; text-decoration:none; display:block; padding:10px;">Terms</a></li>
+</ul>
+<!-- Navbar End -->
+
 
   <h1 style="text-align: center;">Hello, Welcome To Live Blogs 365</h1>
 
@@ -32,6 +48,16 @@
       <button style="width: 150px; height: 50px;"> Click Here To Continue </button>
     </a>
   </div>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
 
 </body>
 </html>
