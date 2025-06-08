@@ -1,89 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-  <meta name="monetag" content="f29ee0733d72f1acd2a3a03e6a690f18"> <style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.navbar {
-  background: #0f172a;
-  padding: 15px 20px;
-  color: white;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.menu-icon {
-  font-size: 26px;
-  float: right;
-  cursor: pointer;
-  display: none;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.nav-links {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #0f172a;
-    margin-top: 10px;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .nav-links li {
-    padding: 10px;
-    text-align: center;
-  }
-}
-</style>
-
-  <meta charset="UTF-8">
-  <title>LiveBlogs365 - Real Stories & Reviews</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="monetag" content="f29ee0733d72f1acd2a3a03e6a690f18"> 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: sans-serif;
+    }
+
+    .navbar {
+      background: #0f172a;
+      padding: 15px 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu-icon {
+      font-size: 26px;
+      float: right;
+      cursor: pointer;
+      display: none;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      list-style: none;
       padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0f172a;
+        margin-top: 10px;
+      }
+
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+
+    /* Post & layout styles */
+    body {
       background: #f2f2f2;
       color: #333;
     }
+
     header {
       background: #222;
       color: white;
       padding: 20px;
       text-align: center;
     }
+
     .post {
       background: white;
       margin: 20px auto;
@@ -92,94 +89,125 @@ body {
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     .post h2 {
       color: #005f73;
     }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #ddd;
     }
+
+    /* Download button */
+    .download-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #1e3a8a;
+      color: #ffffff;
+      border-radius: 40px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #2563eb;
+      transform: scale(1.05);
+    }
+
+    /* CTA button */
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #FF7F50;
+      color: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: #FF6347;
+      transform: scale(1.1);
+    }
   </style>
+
+  <meta charset="UTF-8">
+  <title>LiveBlogs365 - Real Stories & Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="150266" async data-cfasync="false"></script>
 </head>
-<body> <nav class="navbar">
-  <div class="logo">Liveblogs365</div>
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
-  
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="blogs.html">Blogs</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="disclaimer.html">Disclaimer</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms</a></li>
-  </ul>
-</nav>
+<body>
 
-<header>
-  <h1>LiveBlogs365</h1>
-  <p>Real Experiences, Honest Opinions</p>
-</header>
+  <nav class="navbar">
+    <div class="logo">Liveblogs365</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </nav>
 
-<div class="post">
-  <h2>1. My Journey to the Mountains</h2>
-  <p>
-    There’s something magical about being surrounded by towering mountains, where the air feels fresher, the sky looks clearer, and everything else in life fades away. During one of my most memorable trips, I found myself hiking through quiet trails that wound through rugged terrains and lush greenery. Every step upwards felt like I was escaping into a new world. At dawn, I stood at the edge of a cliff, watching the golden sun slowly rise above a sea of clouds. That moment felt surreal — like time had completely stopped, and I could breathe freely. The trek was challenging; my legs ached, and the cold wind pierced my face, but none of that mattered. The peaceful silence, broken only by the rustle of leaves or a distant bird call, gave me a sense of deep connection to nature. I camped under a sky so full of stars that it looked like a painting. That night reminded me of how small we really are in this vast universe, yet how meaningful our experiences can be.
-  </p>
-</div>
+  <header>
+    <h1>LiveBlogs365</h1>
+    <p>Real Experiences, Honest Opinions</p>
+  </header>
 
-<div class="post">
-  <h2>2. Exploring the Red Sea</h2>
-  <p>
-    The Red Sea is not just a body of water — it’s a living, breathing natural wonder full of vibrant marine life and centuries of history. When I first visited its shores, I was struck by how clear and calm the water was, with shades of blue I had never seen before. I took a dive with a local guide, and beneath the surface, I was greeted by a magical world — schools of colorful fish, coral reefs glowing with life, and curious sea creatures I had only seen in documentaries. It felt like swimming in a dream. But it’s not just the beauty of the sea that amazes me. The Red Sea also plays a critical role in global geography and commerce. It connects continents, cultures, and people through the Suez Canal, acting as a bridge between the Mediterranean and Indian Ocean. This mix of beauty and importance makes it truly one of a kind. Even now, when I think of peace, I remember the calm waves of the Red Sea gently washing against the sandy shore.
-  </p>
-</div>
+  <div class="post">
+    <h2>1. My Journey to the Mountains</h2>
+    <p>
+      There’s something magical about being surrounded by towering mountains, where the air feels fresher, the sky looks clearer, and everything else in life fades away. During one of my most memorable trips, I found myself hiking through quiet trails that wound through rugged terrains and lush greenery. Every step upwards felt like I was escaping into a new world. At dawn, I stood at the edge of a cliff, watching the golden sun slowly rise above a sea of clouds. That moment felt surreal — like time had completely stopped, and I could breathe freely. The trek was challenging; my legs ached, and the cold wind pierced my face, but none of that mattered. The peaceful silence, broken only by the rustle of leaves or a distant bird call, gave me a sense of deep connection to nature. I camped under a sky so full of stars that it looked like a painting. That night reminded me of how small we really are in this vast universe, yet how meaningful our experiences can be.
+    </p>
 
-<div class="post">
-  <h2>3. My First Visit to Riyadh</h2>
-  <p>
-    When I landed in Riyadh for the first time, I had no idea what to expect. The city surprised me with its incredible mix of modern development and rich traditions. Tall skyscrapers lined the roads, but just a few steps away, you could find bustling souks filled with local crafts, spices, and friendly conversations. The people were warm and welcoming, and I quickly realized that the heart of the city lies in its culture. I visited the National Museum and got lost in the stories of ancient civilizations that once walked the same land. The streets came alive at night, with the aroma of delicious street food and the sound of laughter everywhere. The contrast between high-end malls and quiet mosques added depth to the city’s personality. Riyadh is not just a capital — it’s a reflection of a growing nation that holds on to its roots while reaching for the future. My short visit turned into a lifelong memory, and I hope to explore even more of its charm.
-  </p>
-</div>
+    <!-- Monetag Direct Link Button Here -->
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://otieu.com/4/9403606" target="_blank" class="download-btn">Download</a>
+    </div>
+  </div>
 
-<div class="post">
-  <h2>4. Honest Review: TeraBox Cloud Storage</h2>
-  <p>
-    With so many cloud storage options out there, TeraBox caught my attention because of its bold claim — 1TB of free storage. Naturally, I was curious. Signing up was easy, and I was genuinely impressed by how clean the user interface looked. Uploading files was quick, and the layout made navigation simple even for beginners. However, as I started using it more, I noticed a few things that users should be aware of. While it offers a lot of storage for free, it does come with limitations like slower download speeds at times and occasional ads. That said, for someone who just wants to store photos, documents, or casual videos, it’s a pretty solid option. I’ve used it to back up important files and access them from different devices without any major issues. It may not be as powerful as Google Drive or Dropbox, but it definitely gets the job done for personal use. Just keep your expectations realistic, and you’ll find value in it.
-  </p>
-</div>
-<footer>
+  <div class="post">
+    <h2>2. Exploring the Red Sea</h2>
+    <p>
+      The Red Sea is not just a body of water — it’s a living, breathing natural wonder full of vibrant marine life and centuries of history. When I first visited its shores, I was struck by how clear and calm the water was, with shades of blue I had never seen before. I took a dive with a local guide, and beneath the surface, I was greeted by a magical world — schools of colorful fish, coral reefs glowing with life, and curious sea creatures I had only seen in documentaries. It felt like swimming in a dream. But it’s not just the beauty of the sea that amazes me. The Red Sea also plays a critical role in global geography and commerce. It connects continents, cultures, and people through the Suez Canal, acting as a bridge between the Mediterranean and Indian Ocean. This mix of beauty and importance makes it truly one of a kind. Even now, when I think of peace, I remember the calm waves of the Red Sea gently washing against the sandy shore.
+    </p>
+  </div>
+
+  <div class="post">
+    <h2>3. My First Visit to Riyadh</h2>
+    <p>
+      When I landed in Riyadh for the first time, I had no idea what to expect. The city surprised me with its incredible mix of modern development and rich traditions. Tall skyscrapers lined the roads, but just a few steps away, you could find bustling souks filled with local crafts, spices, and friendly conversations. The people were warm and welcoming, and I quickly realized that the heart of the city lies in its culture. I visited the National Museum and got lost in the stories of ancient civilizations that once walked the same land. The streets came alive at night, with the aroma of delicious street food and the sound of laughter everywhere. The contrast between high-end malls and quiet mosques added depth to the city’s personality. Riyadh is not just a capital — it’s a reflection of a growing nation that holds on to its roots while reaching for the future. My short visit turned into a lifelong memory, and I hope to explore even more of its charm.
+    </p>
+  </div>
+
+  <div class="post">
+    <h2>4. Honest Review: TeraBox Cloud Storage</h2>
+    <p>
+      With so many cloud storage options out there, TeraBox caught my attention because of its bold claim — 1TB of free storage. Naturally, I was curious. Signing up was easy, and I was genuinely impressed by how clean the user interface looked. Uploading files was quick, and the layout made navigation simple even for beginners. However, as I started using it more, I noticed a few things that users should be aware of. While it offers a lot of storage for free, it does come with limitations like slower download speeds at times and occasional ads. That said, for someone who just wants to store photos, documents, or casual videos, it’s a pretty solid option. I’ve used it to back up important files and access them from different devices without any major issues. It may not be as powerful as Google Drive or Dropbox, but it definitely gets the job done for personal use. Just keep your expectations realistic, and you’ll find value in it.
+    </p>
+  </div>
+
+  <footer>
     <p>&copy; 2025 Live Blogs 365 | <a href="/privacy-policy.html">Privacy Policy</a></p>
   </footer>
 
-<center>
-<!-- Button HTML -->
-<a href="https://liveblogs365.com/post1" class="cta-button">Desert Snake</a>
+  <center>
+    <a href="https://liveblogs365.com/post1" class="cta-button">Desert Snake</a>
+  </center>
 
-<!-- Button Styling (CSS) -->
-<style>
-  .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #FF7F50;
-    color: #fff;
-    border-radius: 50px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px;
-  }
-
-  .cta-button:hover {
-    background-color: #FF6347;
-    transform: scale(1.1);
-  }
-     </Center>
-</style>
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="150387" async data-cfasync="false"></script>
 
 </body>
