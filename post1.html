@@ -73,29 +73,24 @@
       text-decoration: underline;
     }
 
-    .link-section {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    #visitButton {
-      display: none;
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #007bff;
+   #getLinkBtn, #visitLinkBtn button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #28a745;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
 
-    #visitButton:hover {
-      background-color: #0056b3;
+    #getLinkBtn:hover #visitLinkBtn button:hover {
+      background-color: #218838;
     }
 
     #timer {
       font-size: 18px;
-      color: #555;
+      font-weight: bold;
+      margin: 15px 0;
     }
   </style>
 
@@ -151,14 +146,15 @@
     <h2>Conclusion: A Creature of Resilience and Beauty</h2>
     <h2>Conclusion: A Creature of Resilience and Beauty</h2>
     <p>The desert snake is a true marvel of nature. Its ability to adapt to one of the harshest environments on Earth is a testament to the resilience and beauty of the natural world. With their unique hunting techniques, powerful venom, and remarkable camouflage, desert snakes are among the most fascinating and misunderstood creatures on the planet. By understanding and appreciating these reptiles, we can help ensure that they continue to survive and thrive in the wild deserts for generations to come.</p>
-
+  </article>
     <!-- Timer and Visit Link Section -->
-    <div class="link-section">
-      <p id="timer">Please wait <span id="countdown">15</span> seconds to continue...</p>
-      <button id="visitButton" onclick="window.location.href='postlink.html'">Visit Link</button>
+    <div style="text-align:center; margin:30px;">
+      <button> id="getLinkBtn" onclick="startTimer()"> Get Link </button>
+      <p id="timer" style="display:none;"> Please wait <span id="countdown">15</span> seconds to continue...</p>
+      <a id="visitLinkBtn" href="postlink.html" style="display:none;">
+      <button> Visit Link</button>
     </div>
 
-  </article>
 
   <!-- Footer -->
   <footer>
@@ -168,21 +164,24 @@
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="150387" async data-cfasync="false"></script>
 
   <!-- Countdown Script -->
-  <script>
-    let seconds = 15;
-    let countdown = document.getElementById("countdown");
-    let timerText = document.getElementById("timer");
-    let visitBtn = document.getElementById("visitButton");
+  <script> 
+    function startTimer() {
+      document.getElementById("getLinkBtn").style.display = "none";
+      document.getElementById("timer").style.display = "block";
 
-    let countdownInterval = setInterval(() => {
-      seconds--;
-      countdown.textContent = seconds;
-      if (seconds <= 0) {
-        clearInterval(countdownInterval);
-        timerText.style.display = 'none';
-        visitBtn.style.display = 'inline-block';
-      }
-    }, 1000);
+      let countdown = 15;
+      const interval = setInterval(() => {
+        countdown--;
+        document.getElemantById("countdown").innerTextb = countdown;
+
+      If (countdown <= 0) {clearInterval(interval);
+                           document.getElementById("timer").style.display = "none";
+                           document.getElemantById("visitLinkBtn").style.display = "Inline-block";
+                          }
+      }, 1000);
+    }
+    
+      
   </script>
 </body>
 </html>
