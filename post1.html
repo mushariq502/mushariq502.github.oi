@@ -151,7 +151,7 @@
     <div style="text-align:center; margin:30px;">
       <button id="getLinkBtn" onclick="startTimer()"> Get Link </button>
       <p id="timer" style="display:none;"> Please wait <span id="countdown">15</span> seconds to continue...</p>
-      <a id="visitLinkBtn" href="postlink.html" style="display:none;">
+      <a id="visitLinkBtn" href="postlink.html" style="display:none;"> </a>
       <button> Visit Link</button>
     </div>
 
@@ -172,11 +172,11 @@
       let countdown = 15;
       const interval = setInterval(() => {
         countdown--;
-        document.getElemantById("countdown").innerTextb = countdown;
+        document.getElementById("countdown").innerText = countdown;
 
-      If (countdown <= 0) {clearInterval(interval);
+      if (countdown <= 0) {clearInterval(interval);
                            document.getElementById("timer").style.display = "none";
-                           document.getElemantById("visitLinkBtn").style.display = "Inline-block";
+                           document.getElementById("visitLinkBtn").style.display = "Inline-block";
                           }
       }, 1000);
     }
